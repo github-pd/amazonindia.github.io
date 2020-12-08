@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior:smooth;
+}
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0;
+    height:5rem;
+    background-color: rgb(25, 22, 31);
+    align-items: center;
+    z-index: 1;
+}
+.text{
+   width: 25rem;
+   height:2.8rem;
+   margin-left:3%;
+   border-radius:.2rem;
+   outline:none;
+   border: none;
+}
+.brand{
+    color: white;
+    font-size: 2.5rem;
+    margin-left: 2%;
+}
+.brand:hover{
+    color: grey;
+    cursor: pointer;
+}
+.menulines{
+    color: white;
+    padding:1rem;
+    font-size: 2.5rem;
+    display: none;
+}
+#search{
+    background-color:rgb(219, 219, 7);
+    padding: .7rem;
+    margin: .5rem;
+    outline:none;
+    border: none;
+    border-radius:.3rem;
+}
+.menulines:hover{
+ cursor: pointer;
+ color: grey;
+}
+#search:hover{
+    cursor: pointer;
+    color: white;
+    background-color:green;
+}
+.links a{
+   color: white;
+   text-decoration: none;
+   font-size: 1.8rem;
+   padding: 1rem; 
+   width:100%; 
+   max-height: 100%;
+}
+@media only screen and (max-width:1240px){
+     #navbar{height:30rem; max-width:100vw; background-color:black; display: flex; flex-direction: column;justify-content: space-around;position: relative;}
+    .menulines{display: block;}
+    .links{display: none;}
+    .text{display: flex; flex-direction: column;width: 16rem;}
+    #search{display: flex; flex-direction: column; font-size:2.5rem; background-color:green; color: white;}
+    .brand{font-size: 3.5rem;}
+     .items{display: flex;flex-direction: column;justify-content:space-between;}
+     .items img{height: 40rem;width:65rem;padding:2rem;border-radius:5rem;}
+}
+@media (max-width:970px){
+    .items img{height: 40rem;width:55rem;padding:2rem;border-radius:5rem;}
+}
+@media (max-width:500px){
+    .items img{height: 20rem;width:25rem;padding:2rem;border-radius:3rem;}
+    #ss{display: flex;flex-direction: column; justify-content: center; align-items: center;}
+}
+@media (max-width:400px){
+    .items img{height: 20rem;width:25rem;padding:2rem;border-radius:3rem;}
+    #ss{display: flex;flex-direction: column; justify-content: center; align-items: center;}
+}
+@media (min-width:50px) and (max-width:300px){
+    .items img{height: 20rem;width:25rem;padding:2rem;border-radius:3rempx;}
+    #ss{display: flex;flex-direction: column; justify-content: center; align-items: center;}
+    #ss img{width: 100%;}
+    #fs input{padding:2rem;}
+}
+.imgtext{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   font-family:Aparajita;
+   font-size:3rem;
+   align-items: center;
+    padding: 4rem;
+    color: rgba(245, 245, 245, 0.849);
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url('bg.jpg') no-repeat center;
+    height:35rem;
+}
+@keyframes hthree{
+    0%{
+     transform: rotate(0deg);   
+    }
+    25%{
+    transform: rotate(6deg)scale(1.3);
+    }
+     50%{
+    transform: rotate(4deg);
+    }
+     100%{
+    transform: rotate(0deg);
+    }
+}
+@keyframes hone{
+    from{
+       color: beige;
+    }
+    to{
+      color: rgb(97, 177, 97);
+    }
+}
+@keyframes hfour{
+    from{
+       color: bisque;
+      transform: scale(1);
+    }
+    to{
+      color:rgb(0, 204, 255);
+      transform: scale(1.3);
+    }
+}
+.imgtext h1{
+ animation: hone 2s linear infinite;
+}
+.imgtext h3{
+ animation: hthree 3s infinite;
+ animation-delay:1s;
+ font-family: sans-serif;
+}
+.imgtext h4{
+    animation: hfour 2s infinite;
+    animation-delay: 3s;
+    font-family:corbel;
+}
+.items{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:5%;
+}
+.items img{border-radius:10px;transition:all .8s;}
+.ov{overflow: hidden;border-radius:10px;text-align:center;}
+.items img:hover{cursor: pointer;transform:scale(1.2);}
+section{text-align: center;font-size: 3rem;}
+#form{display: flex;flex-direction:column; justify-content: center;align-items: center; padding: 2rem;background-image: url('bg3.jpg');}
+#form input{padding:1rem;width:30rem;margin: 2rem;}
+#form button{padding:1.5rem;width:10rem;color:white;outline:none; background-color:rgb(8, 8, 36);border-radius:2rem;}
+#footer{background-color: rgb(8, 2, 8);height:20rem;}
+.flinks{display: flex; flex-direction: column;justify-content: center;align-items: center;padding-top:2rem;}
+.flinks a{color: whitesmoke;font-size: 1.6rem;text-decoration:none;padding:2rem;}
+.cop{color: whitesmoke;font-size:2rem;text-align: center;margin-top:2rem;}
+pre{margin-top:4rem;}
+#ss{display:flex;justify-content:space-around;align-items: center;margin: 2rem 0;}
